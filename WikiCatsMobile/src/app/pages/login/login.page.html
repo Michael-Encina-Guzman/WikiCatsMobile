@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar">
+    <ion-title > Wiki Cats Mobile </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+
+    <img alt="login" src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" /> 
+
+    <ion-card-header>
+      <ion-card-title> Inicio de Sesión </ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+
+    <ion-list>
+
+      <ion-input label="Usuario" labelPlacement="stacked" [clearOnEdit]="true" placeholder="Ingresar Usuario" [(ngModel)]="login.usuario">
+      </ion-input>
+
+      <ul></ul>
+
+      <ion-input label="Contraseña" labelPlacement="stacked" type="password" placeholder="Ingresar Contraseña" [(ngModel)]="login.password">
+      <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+      </ion-input>
+
+    </ion-list>
+
+    <ion-button expand="block" (click)="ingresar()"> Ingresar </ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
