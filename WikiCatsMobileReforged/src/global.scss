@@ -1,0 +1,47 @@
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+/* CSS GLOBAL DEL PROYECTO WIKICATSMOBILEREFORGED */
+
+ion-toolbar.custom-toolbar {
+    --background: url('https://img.freepik.com/premium-photo/cute-cartoon-cat-with-pink-background-white-polka-dots_14117-803610.jpg') no-repeat center center;
+    --background-size: cover;
+}
+
+ion-content.BackgroundColor {
+    --background: #2a2a2b;
+}
+
+ion-card-title{
+    text-align: center;
+}
+
+ion-button{
+    text-align: center;
+    color: white;
+    --background: #fbb0aa;
+
+}
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+

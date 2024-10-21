@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar">
+    <ion-title > Wiki Cats Mobile </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="BackgroundColor">
+
+<ion-card>
+
+  <img alt="login" src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" /> 
+
+  <ion-card-header>
+    <ion-card-title> Registro </ion-card-title>
+  </ion-card-header>
+  
+  <ion-card-content>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+      <ion-list>
+
+        <ion-input label="Usuario" placeholder="Ingresar Usuario" labelPlacement="stacked" formControlName="username"></ion-input>
+
+        <ion-input label="Email" placeholder="Ingresar Email" labelPlacement="stacked" formControlName="email"></ion-input>
+
+        <ion-input label="Contraseña" placeholder="Ingresar Password" labelPlacement="stacked" formControlName="password"> 
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+
+        <ion-button type="submit" expand="block"> Registrar </ion-button>
+
+      </ion-list>
+
+    </form>
+
+  </ion-card-content>
+
+</ion-card>
+
+</ion-content>

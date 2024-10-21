@@ -1,0 +1,7 @@
+{
+  "name": "WikiCatsMobileReforged",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
