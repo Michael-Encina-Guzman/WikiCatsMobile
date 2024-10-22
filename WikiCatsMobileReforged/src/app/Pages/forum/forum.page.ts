@@ -19,14 +19,11 @@ export class ForumPage implements OnInit {
   fetchCatImages() {
     this.catService.getCatImages().subscribe((data) => {
       data.forEach(cat => {
-        // Ensure we only add new images
         if (!this.fetchedImages.has(cat.url)) {
           this.fetchedImages.add(cat.url);
           this.catImages.push(cat.url);
         }
       });
-
-      // If we still don't have 5 unique images, fetch more
       if (this.catImages.length < 3) {
         this.fetchCatImages();
       }
