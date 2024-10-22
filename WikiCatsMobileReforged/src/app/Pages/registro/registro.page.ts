@@ -35,6 +35,10 @@ export class RegistroPage implements OnInit {
         this.router.navigateByUrl('/home');
       });
   }
+
+  Volver(){
+    this.router.navigate(['/login'])
+  }
 }
 
 

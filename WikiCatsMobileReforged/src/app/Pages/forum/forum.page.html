@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar">
+    <ion-title > Wiki Cats Mobile </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="BackgroundColor">
+
+  <h1> Cats of the day </h1>
+
+  <div *ngFor="let catImage of catImages">
+    <img class="cat-image" [src]="catImage" alt="A cute cat" />
+  </div>
+
+</ion-content>
