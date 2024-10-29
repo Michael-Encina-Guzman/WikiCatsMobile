@@ -68,20 +68,45 @@ ion-fab-button ion-icon {
 }
 
 ion-fab-button {
-    --background: #fbb0aa; 
-  }
+  --background: #fbb0aa; 
+}
   
   ion-fab-button ion-icon {
-    color: white; 
-  }
+  color: white; 
+}
   
   ion-fab-list ion-fab-button {
-    --background: #fbb0aa; 
-  }
+  --background: #fbb0aa; 
+}
   
   ion-fab-list ion-fab-button ion-icon {
-    color: white; 
-  }
+  color: white; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+  padding: 10px; 
+}
+  
+.grid-item {
+  overflow: hidden; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+  
+.cat-image {
+  width: 300px;
+  height: 200px; 
+  margin: 3px; 
+}
+
+.captured-Image{
+  height: 250px; 
+  margin: 3px; 
+}
+  
   
   
 

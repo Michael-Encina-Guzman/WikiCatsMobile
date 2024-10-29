@@ -6,10 +6,43 @@
 
 <ion-content [fullscreen]="true" class="BackgroundColor">
 
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+
+    <ion-fab-button>
+      <ion-icon name="settings-sharp"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+
+      <ion-fab-button (click)="onLogout()">
+        <ion-icon name="log-out-sharp"></ion-icon>
+      </ion-fab-button>
+
+      <ion-fab-button (click)="Home()">
+        <ion-icon name="home-sharp"></ion-icon>
+      </ion-fab-button>
+      
+      <ion-fab-button (click)="Profile()">
+        <ion-icon name="person-circle-sharp"></ion-icon>
+      </ion-fab-button>
+
+    </ion-fab-list>
+  </ion-fab>
+
   <h1> Cats of the day </h1>
 
-  <div *ngFor="let catImage of catImages">
-    <img class="cat-image" [src]="catImage" alt="A cute cat" />
+  <div class="grid-container">
+    <div *ngFor="let catImage of catImages">
+      <img class="cat-image" [src]="catImage" alt="A cute cat" />
+    </div>
+  </div>
+
+  <p> También dentro de nuestras funciones puedes agregar tus propias fotos </p>
+  
+  <ion-button (click)="openCamera()" expand="block"> Abrir Cámara </ion-button>
+
+  <div *ngIf="capturedImage">
+    <img [src]="capturedImage" alt="Captured Image" class="captured-Image" />
   </div>
 
 </ion-content>
