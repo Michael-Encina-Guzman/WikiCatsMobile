@@ -1,7 +1,0 @@
-Imports Proyecto WikiCatsMobileReforged
-
-- npm install firebase
-- npm install @angular/fire firebase
-- npm install uuid
-
-
