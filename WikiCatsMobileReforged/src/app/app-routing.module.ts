@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'forum',
     loadChildren: () => import('./Pages/forum/forum.module').then( m => m.ForumPageModule)
+  },  {
+    path: 'recuperacion',
+    loadChildren: () => import('./Pages/recuperacion/recuperacion.module').then( m => m.RecuperacionPageModule)
   },
+
 
 ];
 

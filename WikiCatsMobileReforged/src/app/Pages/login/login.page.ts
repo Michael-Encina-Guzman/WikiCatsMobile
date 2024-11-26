@@ -60,6 +60,10 @@ export class LoginPage implements OnInit {
     this.router.navigate(['/registro']);
   }
 
+  Recuperacion(){
+    this.router.navigate(['/recuperacion'])
+  }
+
   async presentToast(position: 'top' | 'middle' | 'bottom', msg: string, duration: number = 3000) {
     const toast = await this.toastController.create({
       message: msg,

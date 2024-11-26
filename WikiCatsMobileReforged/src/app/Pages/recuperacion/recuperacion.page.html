@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar">
+    <ion-title > Wiki Cats Mobile </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="BackgroundColor">
+
+  <ion-card>
+
+    <img alt="login" src="https://cdn3.iconfinder.com/data/icons/avatars-9/145/Avatar_Cat-512.png" /> 
+
+    <ion-card-header>
+      <ion-card-title> Recuperacion de Contraseña </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-list>
+
+        <ion-item>
+          <ion-input label="Email" placeholder="Ingresar Email" labelPlacement="stacked" [(ngModel)]="email" type="email" required></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" (click)="sendPasswordResetEmail()"> Recuperar Contraseña </ion-button>
+
+        <ion-button (click)="Volver()" expand="block"> Volver </ion-button>
+
+      </ion-list>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
